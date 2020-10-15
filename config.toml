@@ -1,0 +1,8 @@
+baseURL = ""
+languageCode = "id-ID"  
+assetDir = "static"
+paginate = 10
+
+[taxonomies]
+    tag="#"
+

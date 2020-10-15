@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="{{ range $i, $e := .Params.keywords }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}" />
+  <meta name="description" content="{{ .Description}}" />
+  <meta name="author" content="Tomo" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>{{ .Title }}</title>
+
+  <!-- favicon icon -->
+  <link rel="shortcut icon" href="{{ .Site.BaseURL }}/images/favicon.ico" />
+
+  <!-- inject css start -->
+
+  <!--== bootstrap -->
+  <link href="{{ .Site.BaseURL }}/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+  <!--== animate -->
+  <link href="{{ .Site.BaseURL }}/css/animate.css" rel="stylesheet" type="text/css" />
+
+  <!--== fontawesome -->
+  <link href="{{ .Site.BaseURL }}/css/fontawesome-all.css" rel="stylesheet" type="text/css" />
+
+  <!--== themify -->
+  <link href="{{ .Site.BaseURL }}/css/themify-icons.css" rel="stylesheet" type="text/css" />
+
+  <!--== audioplayer -->
+  <link href="{{ .Site.BaseURL }}/css/audioplayer/plyr.css" rel="stylesheet" type="text/css" />
+
+  <!--== magnific-popup -->
+  <link href="{{ .Site.BaseURL }}/css/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
+
+  <!--== owl-carousel -->
+  <link href="{{ .Site.BaseURL }}/css/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
+
+  <!--== base -->
+  <link href="{{ .Site.BaseURL }}/css/base.css" rel="stylesheet" type="text/css" />
+
+  <!--== shortcodes -->
+  <link href="{{ .Site.BaseURL }}/css/shortcodes.css" rel="stylesheet" type="text/css" />
+
+  <!--== default-theme -->
+  <link href="{{ .Site.BaseURL }}/css/style.css" rel="stylesheet" type="text/css" />
+
+  <!--== responsive -->
+  <link href="{{ .Site.BaseURL }}/css/responsive.css" rel="stylesheet" type="text/css" />
+
+  <!-- inject css end -->
+
+</head>
+
+<body>
+
+  <!-- page wrapper start -->
+
+  <div class="page-wrapper">
+
+    <!-- preloader start -->
+
+    <div id="ht-preloader">
+      <div class="loader clear-loader">
+        <div class="loader-text">Loading</div>
+        <div class="loader-dots"> <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- preloader end -->
+
+
+    <!--header start-->
+
+    <header id="site-header" class="header">
+      <div id="header-wrap">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <!-- Navbar -->
+              <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand logo" href="{{ .Site.BaseURL }}/index.html">
+                  <img id="logo-img" class="img-center" src="{{ .Site.BaseURL }}/images/hosting-tekno-logo-6-alt1.png"
+                    alt="">
+                  <!-- <h2>HOSTINGTEKNO</h2> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                  aria-expanded="false" aria-label="Toggle navigation"> <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                  <ul class="navbar-nav ml-auto">
+                    {{ $currentPage := . }}
+                    {{ range .Site.Menus.main }}
+                    <li class="nav-item">
+                      <a class='nav-link {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}' href="{{ .URL }}">{{ .Name }}</a>
+                    </li>
+                    {{ end }}
+                    <li class="nav-item">
+                      <a class="nav-link" href="{{ .Site.BaseURL }}/portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{{ .Site.BaseURL }}/harga">Blog</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav id="ht-main-nav"> <a href="{{ .Site.BaseURL }}/#" class="ht-nav-toggle active"><span></span></a>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <img class="img-fluid side-logo mb-3" src="{{ .Site.BaseURL }}/images/logo.png" alt="">
+            <p class="mb-5">Loptus - Digital Marketing Agency Responsive HTML5 Template is Most PowerFull template 2018
+              For Everyone, Start working with an company that provide everything you need to generate awareness.</p>
+            <div class="form-info">
+              <h4 class="title">Contact info</h4>
+              <ul class="contact-info list-unstyled mt-4">
+                <li class="mb-4"><i class="flaticon-location"></i><span>Address:</span>
+                  <p>423B, Road Wordwide Country, USA</p>
+                </li>
+                <li class="mb-4"><i class="flaticon-call"></i><span>Phone:</span><a
+                    href="{{ .Site.BaseURL }}/tel:+912345678900">+91-234-567-8900</a>
+                </li>
+                <li><i class="flaticon-email"></i><span>Email</span><a
+                    href="{{ .Site.BaseURL }}/mailto:themeht23@gmail.com">
+                    themeht23@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="social-icons social-colored mt-5">
+              <ul class="list-inline">
+                <li class="mb-2 social-facebook"><a href="{{ .Site.BaseURL }}/#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="mb-2 social-twitter"><a href="{{ .Site.BaseURL }}/#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="mb-2 social-linkedin"><a href="{{ .Site.BaseURL }}/#"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li class="mb-2 social-gplus"><a href="{{ .Site.BaseURL }}/#"><i class="fab fa-google-plus-g"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--header end-->
