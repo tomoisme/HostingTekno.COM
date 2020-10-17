@@ -210,11 +210,11 @@ h3 {font-size: 22px; line-height: 30px;}
 
 .insideText {font-size: 80px; line-height: 80px;}
 .boxed-view {padding: 20px;}
-
+.page-content {margin-top: 125px;}
 }
 
 @media (max-width: 576px){
-.col-xx-12{width: 100% !important;}
+.col-xs-12{width: 100% !important;}
 h1{font-size: 30px; line-height: 36px;}
 h2{font-size: 26px; line-height: 34px; margin-bottom: 10px;}
 h3 {font-size: 20px; line-height: 28px;}
@@ -248,7 +248,7 @@ h4 {font-size: 18px; line-height: 26px;}
 /*header*/
 #header-wrap {padding: 70px 0 15px;}
 #header-wrap.fixed-header{padding: 15px 0;}
-.right-nav{position: absolute; left: 50%; top: -60px; transform: translateX(-50%); -webkit-transform: translateX(-50%); -o-transform: translateX(-50%); -ms-transform: translateX(-50%); -moz-transform: translateX(-50%);}
+.right-nav{position: absolute; left: 50%; top: -50px; transform: translateX(-50%); -webkit-transform: translateX(-50%); -o-transform: translateX(-50%); -ms-transform: translateX(-50%); -moz-transform: translateX(-50%);}
 .play-btn span{display: none;}
 #ht-main-nav {width: 100%;}
 .navbar-toggler{margin-right: 0;}
@@ -315,5 +315,4 @@ h4 {font-size: 18px; line-height: 26px;}
 .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {font-size: 30px; margin: 0 5px; padding: 6px 40px !important;}
 
 .error-page h1 {font-size: 120px; line-height: 80px;}
-
 }
