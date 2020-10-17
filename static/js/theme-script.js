@@ -115,15 +115,6 @@ function fullScreen() {
     }
 };
 
-
-/*------------------------------------
-  HT Audiplayer
---------------------------------------*/
-function audiplayer() {  
- const player = new Plyr('#player'); 
-};
-
-
 /*------------------------------------
   HT Counter
 --------------------------------------*/
@@ -524,7 +515,6 @@ $(document).ready(function() {
     owlcarousel(),
     menu(),
     fullScreen(),
-    audiplayer(),
     counter(),
     magnificpopup(),
     scrolltop(),
