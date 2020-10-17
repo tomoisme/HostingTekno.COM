@@ -10,6 +10,6 @@ menu:
         name : "Harga"
         title : "Harga jasa pembuatan website"
         url : "/harga/"
-        weight : 1
+        weight : 2
 ---
 

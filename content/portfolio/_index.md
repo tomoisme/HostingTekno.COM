@@ -10,6 +10,6 @@ menu:
         name : "Portfolio"
         title : "Portfolio Jasa Pembuatan Website"
         url : "/portfolio/"
-        weight : 0
+        weight : 3
 ---
 
