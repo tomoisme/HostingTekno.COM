@@ -1,0 +1,43 @@
+{{ partial "header" . }}
+
+<div class="page-content-margin">
+
+    <!--blog start-->
+
+    <section>
+        <div class="container">
+            <div class="row">
+                {{ range .Paginator.Pages }}
+                <div class="col-lg-4 col-md-6">
+                    <div class="post">
+                        <div class="post-image">
+                            <img class="img-fluid h-100 w-100" src="" alt="">
+                        </div>
+                        <div class="post-desc">
+                            <div class="post-date">{{.Date.Format "2"}} <span>{{.Date.Format "Jan"}}
+                                    {{.Date.Format "2006"}}</span>
+                            </div>
+                            <div class="post-title">
+                                <h5><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
+                            </div>
+                            <p>{{ .Summary }}</p>
+                        </div>
+                    </div>
+                    <div class="post-author">
+                        By: <span>Admin Tukang Bikin Web</span>
+                    </div>
+                </div>
+
+                {{ end }}
+
+
+                {{ template "_internal/pagination.html" . }}
+            </div>
+        </div>
+    </section>
+
+    <!--blog end-->
+
+</div>
+
+{{ partial "footer" . }}

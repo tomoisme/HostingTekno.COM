@@ -210,7 +210,8 @@ h3 {font-size: 22px; line-height: 30px;}
 
 .insideText {font-size: 80px; line-height: 80px;}
 .boxed-view {padding: 20px;}
-.page-content {margin-top: 125px;}
+
+.page-content-margin {margin-top: 125px;}
 }
 
 @media (max-width: 576px){

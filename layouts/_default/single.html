@@ -1,5 +1,37 @@
 {{ partial "header" . }}
 
-<div style="height: 500px;"></div>
+<div class="page-content-margin">
+
+    <!--blog start-->
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="left-side">
+                        <div class="post">
+                            <div class="post-image">
+                                <img class="img-fluid" src="images/blog/large/01.jpg" alt="">
+                            </div>
+                            <div class="post-desc">
+                                <div class="post-date mb-2">
+                                    {{ .Date.Format "2" }}
+                                    <span>{{ .Date.Format "Jan" }} {{ .Date.Format "2006" }}</span>
+                                </div>
+                                <div class="post-title">
+                                    <h2>{{ .Title }}</h2>
+                                </div>
+                                <p>{{ .Content }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--blog end-->
+
+</div>
 
 {{ partial "footer" . }}
