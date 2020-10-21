@@ -10,15 +10,19 @@
                         data-bg-img="{{ .Site.BaseURL }}/images/bg/02.png">
                         <div class="footer-logo">
                             <a href="{{ .Site.BaseURL }}">
-                                <img class="img-center" src="{{ .Site.BaseURL }}/images/hosting-tekno-logo-6-alt1.png" alt="">
+                                <img class="img-center" src="{{ .Site.BaseURL }}/images/hosting-tekno-logo-6-alt1.png"
+                                    alt="">
                             </a>
                         </div>
                         <p class="mb-3">
-                            HostingTekno adalah jasa pembuatan website company profile, website portfolio, website bisnis 
-                            dan website perusahaan. Jasa web yang kami tawarkan mengedepankan kualitas, kecepatan dan keamanan.
-                            Kami menggunakan static site generator, sehingga website anda dapat ditampilkan dengan sangat cepat
-                            dan tidak dapat di-hack. 
-                        </p> 
+                            HostingTekno adalah jasa pembuatan website company profile, website portfolio, website
+                            bisnis
+                            dan website perusahaan. Jasa web yang kami tawarkan mengedepankan kualitas, kecepatan dan
+                            keamanan.
+                            Kami menggunakan static site generator, sehingga website anda dapat ditampilkan dengan
+                            sangat cepat
+                            dan tidak dapat di-hack.
+                        </p>
                         <div class="social-icons social-border circle social-hover mt-5">
                             <h4 class="title">Follow Us</h4>
                             <ul class="list-inline">
@@ -43,16 +47,12 @@
                             <div class="row">
                                 <div class="col-sm-5">
                                     <ul class="list-unstyled">
-                                        <li><a href="about-us.html">About Us</a>
+                                        {{ $currentPage := . }}
+                                        {{ range .Site.Menus.main }}
+                                        <li>
+                                            <a href="{{ .URL }}">{{ .Name }}</a>
                                         </li>
-                                        <li><a href="service.html">Our Service</a>
-                                        </li>
-                                        <li><a href="case-studies-grid-3.html">Case Studies</a>
-                                        </li>
-                                        <li><a href="project-grid-3.html">Project</a>
-                                        </li>
-                                        <li><a href="faq.html">Faq</a>
-                                        </li>
+                                        {{ end }}
                                     </ul>
                                 </div>
                                 <div class="col-sm-7">
@@ -72,12 +72,12 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 sm-mt-5">
-                            <h4 class="title">Contact us</h4>
+                            <h4 class="title">Hubungi Kami</h4>
                             <ul class="media-icon list-unstyled">
                                 <li>
                                     <p class="mb-0">Jl. Mirah Raya No. 2. Tangerang Selatan. Banten</p>
                                 </li>
-                                <li><a href="mailto:themeht23@gmail.com">info@hostingtekno.com</a>
+                                <li><a href="mailto:info@hostingtekno.com">info@hostingtekno.com</a>
                                 </li>
                                 <li><a href="tel:+6283873544537">+62-838-7354-4537</a>
                                 </li>

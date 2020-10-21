@@ -39,4 +39,8 @@ Sebuah website bisnis dapat memberikan persepsi tentang bisnis anda yang tidak d
 
 Website untuk bisnis tidak semahal dan serumit yang anda pikirkan, dengan budget yang kecil bagi sebuah bisnis dapat meningkatkan potensi pendapatan berkali-kali lipat dari biaya yang dikeluarkan untuk membiayai sebuah website. Website juga dapat meningkatkan potensi bisnis anda ke level yang lebih baik lagi.
 
+Jangan tunggu sampai pesaing anda sukses dulu baru ikutan. Bikin website bisnis professional yang keren, kenceng dan anti hack bersama HostingTekno.
+
+<a href="https://api.whatsapp.com/send?phone=6282218818874" class="btn btn-theme">WhatsApp Sales</a>
+
 >> If your business is not on the internet, then your business will be out of business. - Bill Gates
