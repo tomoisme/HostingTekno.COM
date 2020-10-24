@@ -4,5 +4,5 @@ assetDir = "static"
 paginate = 10
 
 [taxonomies]
-    tag="#"
+    tag="tags"
 

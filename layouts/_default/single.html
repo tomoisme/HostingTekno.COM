@@ -22,6 +22,17 @@
                                     <h2>{{ .Title }}</h2>
                                 </div>
                                 <p>{{ .Content }}</p>
+
+                                <p>
+                                    {{ $taxo := "tags" }}
+                                    <!-- Use the plural form here -->
+                                    {{ range .Param $taxo }}
+                                    {{ $name := . }}
+                                    {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
+                                    <a href="{{ .Permalink }}" class="btn">{{ $name }}</a> 
+                                    {{ end }}
+                                    {{ end }}
+                                </p>
                             </div>
                         </div>
                     </div>

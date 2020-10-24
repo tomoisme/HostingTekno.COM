@@ -5,6 +5,12 @@ draft: false
 layout: "single"
 description: ""
 summary: "Walaupun sudah booming sejak awal era internet, website masih tetap menjadi pintu menuju kesuksesan digital marketing. Simak alasan-alasan kenapa anda harus tetap memiliki website bisnis di tahun 2020."
+tags: [
+    "kenapa harus punya website",
+    "digital marketing",
+    "website bisnis",
+    "website company profile"
+]
 ---
 
 Kami mengerti alasan-alasan kenapa banyak pemilik bisnis enggan untuk membuat website bisnis atau website company profile. Banyak dari mereka yang berpikir: "Saya nggak ngerti caranya", "saya gaptek", "biayanya mahal sekali", "saya nggak ada waktu untuk ngurusin websitenya", "Bisnis saya udah cukup baik" dan lain-lain. 
